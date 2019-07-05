@@ -101,7 +101,7 @@
 		51CD293922CF76440047A795 = {
 			isa = PBXGroup;
 			children = (
-				51CD294522CF76440047A795 /* InfiniteContainerView */,
+				51CD294522CF76440047A795 /* Sources */,
 				51CD295622CF8CA10047A795 /* Example */,
 				51CD294422CF76440047A795 /* Products */,
 			);
@@ -116,13 +116,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		51CD294522CF76440047A795 /* InfiniteContainerView */ = {
+		51CD294522CF76440047A795 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				51CD294F22CF8C5B0047A795 /* InfiniteContainerView.swift */,
 				51CD294E22CF8C380047A795 /* Resources */,
 			);
-			path = InfiniteContainerView;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		51CD294E22CF8C380047A795 /* Resources */ = {
