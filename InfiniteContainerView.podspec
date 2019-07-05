@@ -8,6 +8,8 @@
 
 Pod::Spec.new do |s|
 
+  s.swift_version = '4.2'
+
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  These will help people to find your library, and whilst it
@@ -16,8 +18,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "InfiniteContainerView"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of InfiniteContainerView."
+  s.version      = "1.0.1"
+  s.summary      = "Lightweight infinite container view"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -27,7 +29,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "http://EXAMPLE/InfiniteContainerView"
+  s.homepage     = "http://github.com/vladislovshilov/InfiniteContainerView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -52,9 +54,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Vladislav Shilov" => "vladyslav.shylov@brainbeanapps.com" }
+  s.author             = { "Vladislav Shilov" => "vladislov.shilov@gmail.com" }
   # Or just: s.author    = "Vladislav Shilov"
-  # s.authors            = { "Vladislav Shilov" => "vladyslav.shylov@brainbeanapps.com" }
+  # s.authors            = { "Vladislav Shilov" => "vladislov.shilov@gmail.com" }
   # s.social_media_url   = "http://twitter.com/Vladislav Shilov"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +66,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+    s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/InfiniteContainerView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/vladislovshilov/InfiniteContainerView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.swift"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -116,7 +118,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = 'UIKit', 'Foundation'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
